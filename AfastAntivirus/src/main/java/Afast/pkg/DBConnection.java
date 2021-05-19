@@ -14,7 +14,7 @@ public class DBConnection {
         String url = "jdbc:mysql://localhost:3306/afast?autoReconnect=true&SSL=false";
 
         try {
-            Connection connection = DriverManager.getConnection(url, "root", "O5x3qgdfah!1");
+            Connection connection = DriverManager.getConnection(url, "root", "passwd");
             Statement statement = connection.createStatement();
             String query = "select * from utilizator";
             statement.executeQuery(query);
